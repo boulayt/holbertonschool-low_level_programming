@@ -1,13 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - prints the size of varous types
+ * main - prints the size of various types
  *
  * Return: 0 if printf works
  */
 
 int main(void)
 {
-	printf("Size of a char: %d byte(s)\nSize of an int: %d byte(s)\nSize of a long int: %d byte(s)\nSize of a long long int: %d byte(s)\nSize of a float: %dbyte(s)\n", sizeof(char), sizeof(int), sizeof(long int), sizeof(long long int), sizeof(float));
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of an int: %d bytes(s)\n", sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %d bytes\n", sizeof(float));
     return (0);
 }
