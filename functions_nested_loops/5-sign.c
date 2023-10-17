@@ -2,7 +2,7 @@
 
 /**
  * print_sign - checks sign
- * @c: character tested
+ * @n: number tested
  *
  * Description: same
  * Return: 1 if n>0, 0 if n=0, -1 if n<0
@@ -24,6 +24,6 @@ int print_sign(int n)
 		_putchar('-');
 		return (-1);
 	}
-	
+
 	return (0);
 }
