@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_alphabet - prints the alphabet
+ *
+ * Description: with a newline
+ */
 void print_alphabet(void)
 {
 	char c;
