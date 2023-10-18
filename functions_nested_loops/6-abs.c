@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_sign - computes the absolute value of an integer
+ * _abs - computes the absolute value of an integer
  * @n: number tested
  *
  * Description: same
- * Return: the absolute value of n 
+ * Return: the absolute value of n
  */
 int _abs(int n)
 {
