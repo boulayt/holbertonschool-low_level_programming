@@ -25,5 +25,5 @@ int add(int a, int b)
 			_putchar('0' + ((-1) * (r / x)));
 		}
 	}
-	return((r % 10));
+	return ((r % 10));
 }
