@@ -19,7 +19,10 @@ int add(int a, int b)
 		if ((r > 0) && (r / x) > 0)
 			_putchar('0' + (r / x));
 		if ((r < 0) && (r / x) <= (-1))
-			_putchar('0' + (r / x));
+		{
+			_putchar('-');
+			_putchar('0' + (-1) * (r / x));
+		}
 	}
 	return((r % 10));
 }
