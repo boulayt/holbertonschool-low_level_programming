@@ -9,8 +9,11 @@
  */
 int print_last_digit(int n)
 {
-	if (n != 0)
-		return (n % 10);
-	else
-		return (0);
+	int last;
+
+	last = n % 10;
+
+	if (n < 0)
+		return (n * (-1));
+	return (last);
 }
