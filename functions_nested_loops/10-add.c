@@ -22,7 +22,7 @@ int add(int a, int b)
 			_putchar('0' + (r / x));
 		if ((r < 0) && (r / x) <= (-1))
 		{
-			_putchar('0' + (-1) * (r / x));
+			_putchar('0' + ((-1) * (r / x)));
 		}
 	}
 	return((r % 10));
