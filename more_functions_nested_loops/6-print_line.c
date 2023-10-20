@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_lines - prints n * '_'
+ * print_line - prints n * '_'
+ * @n: input
  *
  * Description: same
  * Return: 0
