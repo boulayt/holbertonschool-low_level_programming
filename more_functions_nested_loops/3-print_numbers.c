@@ -8,13 +8,10 @@
  */
 void print_numbers(void)
 {
-	char c;
+	char i;
 
-	if (c >= 48 && c <= 57)
-	{
-		_puthcar(c);
-		_putchar('\n');
-	}
-	else
-		return (0);
+	for (i = 48; i <= 57; i++)
+		_putchar(i);
+
+	_putchar('\n');
 }
