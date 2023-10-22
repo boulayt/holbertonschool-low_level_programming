@@ -13,7 +13,7 @@ int print_last_digit(int n)
 
 	if (n < 0)
 		n = n * (-1);
-	if (n <= INT_MIN)
+	if (n <= (-2147483647))
 		n = n * 100;
 
 	last = n % 10;
