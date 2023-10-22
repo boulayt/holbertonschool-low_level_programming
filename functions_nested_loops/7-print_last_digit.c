@@ -10,7 +10,7 @@
 int print_last_digit(int n)
 {
 	int last;
-	
+
 	if (n == (-2147483647))
 		n = n + 10;
 
