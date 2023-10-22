@@ -13,6 +13,8 @@ int print_last_digit(int n)
 
 	if (n < 0)
 		n = n * (-1);
+	if (n <= INT_MIN)
+		n = n * 100;
 
 	last = n % 10;
 	_putchar('0' + last);
