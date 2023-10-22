@@ -21,9 +21,10 @@ int main(void)
 			printf("Buzz");
 		else if ((i % 3) && (i % 5))
 			printf("%d", i);
-		printf(" ");
+		if (i != 100)
+			printf(" ");
 	}
-	printf ("\n");
-	
+	printf("\n");
+
 	return (0);
 }
