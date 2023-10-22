@@ -11,7 +11,7 @@ int print_last_digit(int n)
 {
 	int last;
 
-	if (n == -2147483647)
+	if (n == -2147483648)
 		return (88);
 
 	if (n < 0)
