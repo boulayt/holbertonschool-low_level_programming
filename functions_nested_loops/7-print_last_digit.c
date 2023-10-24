@@ -21,6 +21,7 @@ int print_last_digit(int n)
 
 	last = n % 10;
 
+	else
 	_putchar('0' + last);
 
 	return (last);
