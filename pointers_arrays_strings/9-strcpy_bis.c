@@ -12,12 +12,21 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-        int i;
+	int i, j;
 
-	for (i = 0; src[i] != 0; i++)
-		dest[i] = src[i];
+	j = strlen(src);
 
-	printf("\\0\n");
+	while (*src != '\0')
+	{
+		for (i = 0; i < j; i++)
+		{
+			char temp = *src;
+
+			*src = *dest;
+			*dest = temp;
+		}
+	}
+	printf ("\\o\n");
 
 	return (dest);
 }
