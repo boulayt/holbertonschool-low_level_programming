@@ -1,15 +1,18 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - check the code
+ * factorial - check the code
  *
- * @s: input string
+ * @n: input
  */
-int _strlen_recursion(char *s)
+int factorial(int n)
 {
-	if (*s == '\0')
-		return (0);
+	if (n < 0)
+		return (-1);
+
+	else if (n == 0)
+		return (1);
 
 	else
-		return (_strlen_recursion(s + 1) * s);	
+		return n * factorial(n - 1);
 }
