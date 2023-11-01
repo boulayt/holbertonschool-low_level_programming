@@ -4,6 +4,7 @@
  * factorial - check the code
  *
  * @n: input
+ * Return: value of factorial for n
  */
 int factorial(int n)
 {
