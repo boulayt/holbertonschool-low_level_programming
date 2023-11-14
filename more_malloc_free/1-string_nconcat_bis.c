@@ -33,14 +33,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s1[s1L] != '\0')
 		s1L++;
 
-	while (s2[s2L] != '\0')
-		s2L++;
-
 	if (n >= strlen(s2))
-		s2L = s2L;
+	{
+		while (s2[s2L] != '\0')
+		s2L++;
+	}
 
 	else if (n < strlen(s2))
-		s2L = n;
+	{
+		while (s2[s2L] < s2[n] && s2[s2L] != '\0')
+			s2L++;
+	}
 
 	str_cont = malloc((s1L + s2L) + 1);
 
