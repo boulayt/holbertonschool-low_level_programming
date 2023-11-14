@@ -53,5 +53,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (j < s2L)
 		str_cont[s1L++] = s2[j++];
 
+	str_cont = str_cont + '\0';
+
 	return (str_cont);
 }
