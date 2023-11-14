@@ -32,11 +32,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (array == NULL)
 		return (NULL);
 
-	if (array)
-	{
-		for (i = 0; i < nmemb; i++)
-			array[i] = 0;
-	}
+	for (i = 0; i < nmemb * size; i++)
+		array[i] = 0;
 
 	return (array);
 }
