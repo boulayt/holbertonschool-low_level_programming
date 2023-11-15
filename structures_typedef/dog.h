@@ -10,6 +10,11 @@
  *
  */
 
+/**
+ * dog_t - typedef for dog
+ *
+ */
+
 typedef struct dog
 {
 	char *name;
