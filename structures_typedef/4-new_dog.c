@@ -24,11 +24,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	newDog->name = strdup(name);
-	if (newDog->name == NULL)
+	if (name == NULL)
 		return (NULL);
 
 	newDog->owner = strdup(owner);
-	if (newDog->owner == NULL)
+	if (owner == NULL)
 		return (NULL);
 
 	newDog->age = age;
