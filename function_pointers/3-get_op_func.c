@@ -24,8 +24,8 @@ int (*get_op_func(char *s)(int, int))
     	for (i = 0; i < 5; i++)
     	{
 	    if (ops)
-		    return (ops->op);
+		    return (ops);
 	}
 
-	return (ops);
+	return (0);
 }
