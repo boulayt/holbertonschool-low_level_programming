@@ -36,7 +36,7 @@ int op_sub(int a, int b)
  * op_mul - multiplies 2 integers
  *
  * @a: first input integer
- * @b: second input integer *
+ * @b: second input integer
  *
  * Return: a * b
  */
@@ -50,7 +50,7 @@ int op_mul(int a, int b)
  * op_div - divides 2 integers
  *
  * @a: first input integer
- * @b: second input integer *
+ * @b: second input integer
  *
  * Return: a / b
  */
@@ -61,10 +61,15 @@ int op_div(int a, int b)
 }
 
 /*
- * op_div - divides 2 integers
+ * op_mod - gives the modulo of  2 integers
  *
  * @a: first input integer
- * @b: second input integer *
+ * @b: second input integer
  *
- * Return: a / b
+ * Return: a % b
  */
+
+int op_mod(int a, int b)
+{
+	return (a % b);
+}
